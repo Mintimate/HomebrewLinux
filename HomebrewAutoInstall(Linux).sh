@@ -2,7 +2,7 @@ if [ `id -u` -eq 0 ];then
     echo '\033[1;31m请勿使用root用户安装Homebrew \033[0m'
     exit 0
 elif [ `uname -m` != 'x86_64' ];then
-    ehco '\033[1;31mLinux的Homebrew暂时不支持非x86_x64设备 \033[0m'
+    echo '\033[1;31mLinux的Homebrew暂时不支持非x86_x64设备 \033[0m'
     exit 0
 elif [ `uname` = "Darwin" ];then
     echo '\033[1;31m
