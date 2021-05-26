@@ -5,8 +5,7 @@ elif [ `uname -m` != 'x86_64' ];then
     echo '\033[1;31mLinux的Homebrew暂时不支持非x86_x64设备 \033[0m'
     exit 0
 elif [ `uname` = "Darwin" ];then
-    echo '\033[1;31m
-    本Homebrew安装脚本为Linux版本，macOS用户请查看：
+    echo '\033[1;31m本Homebrew安装脚本为Linux版本，macOS用户请查看：
         https://www.mintimate.cn/2020/04/05/Homebrew
      \033[0m'
     exit 0
