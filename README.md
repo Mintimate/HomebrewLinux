@@ -5,6 +5,11 @@
 ```
 如果你安装Homebrew没有网络问题，请优先使用官方安装脚本。
 Homebrew官网：https://brew.sh/
+本脚本：
+```
+/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/Mintimate/HomebrewLinux/HomebrewAutoInstall(Linux).sh)"
+
+```
 # 反馈
 如果有问题：
 - Mintimate's Blog：https://www.mintimate.cn
