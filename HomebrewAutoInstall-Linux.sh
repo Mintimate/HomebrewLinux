@@ -25,7 +25,7 @@ echo '
 echo '\033[1;32m
 请选择一个下载镜像，例如中科大，输入1回车。
 \033[1;33m 1、腾讯云源(适用于大陆设备)  2、官方下载源(适用于非大陆设备) \033[0m'
-read "MY_DOWN_NUM?请输入序号: "
+read MY_DOWN_NUM
 if [[ "$MY_DOWN_NUM" -eq "2" ]];then
   echo "你选择了官方下载源"
   #HomeBrew基础框架
