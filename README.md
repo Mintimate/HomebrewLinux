@@ -7,8 +7,7 @@
 Homebrew官网：https://brew.sh/
 本脚本：
 ```
-/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/Mintimate/HomebrewLinux/HomebrewAutoInstall(Linux).sh)"
-
+/bin/bash -c "$(curl -fsSL 'https://cdn.jsdelivr.net/gh/Mintimate/HomebrewLinux@latest/HomebrewAutoInstall-Linux.sh')"
 ```
 # 反馈
 如果有问题：
