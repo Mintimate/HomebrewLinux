@@ -1,17 +1,17 @@
 if [ `id -u` -eq 0 ];then
-    echo '\033[1;31m请勿使用root用户安装Homebrew \033[0m'
+    echo -e '\033[1;31m请勿使用root用户安装Homebrew \033[0m'
     exit 0
 elif [ `uname -m` != 'x86_64' ];then
-    echo '\033[1;31mLinux的Homebrew暂时不支持非x86_x64设备 \033[0m'
+    echo -e '\033[1;31mLinux的Homebrew暂时不支持非x86_x64设备 \033[0m'
     exit 0
 elif [ `uname` = "Darwin" ];then
-    echo '\033[1;31m本Homebrew安装脚本为Linux版本，macOS用户请查看：
+    echo -e '\033[1;31m本Homebrew安装脚本为Linux版本，macOS用户请查看：
         https://www.mintimate.cn/2020/04/05/Homebrew \033[0m'
     exit 0
 fi
 
-echo '
-033[1;32m开始执行Brew自动安装程序\033[0m
+echo -e '
+\033[1;32m开始执行Brew自动安装程序\033[0m
 \033[1;36m_____________________________________________________________\033[0m
 \033[1;36m    _   _\033[0m
 \033[1;36m    /  /|     ,                 ,\033[0m
@@ -22,8 +22,8 @@ echo '
 \033[1;36m_____________________________________________________________\033[0m
               \033[1;36m作者：Mintimate\033[0m'
 #选择一个下载源
-echo '\033[1;32m
-请选择一个下载镜像，例如中科大，输入1回车。
+echo -e '\033[1;32m
+请选择一个下载镜像，例如:腾讯云源，输入1回车。
 \033[1;33m 1、腾讯云源(适用于大陆设备)  2、官方下载源(适用于非大陆设备) \033[0m'
 read MY_DOWN_NUM
 if [[ "$MY_DOWN_NUM" -eq "2" ]];then
@@ -64,7 +64,7 @@ git clone $USER_CORE_GIT homebrew-core
 echo '==> 克隆完成'
 echo '==> Homebrew安装完成，请手动添加到环境变量：'
 
-echo "
+echo -e "
     \033[1;32m添加环境变量\033[0m
     使用Bash用户（默认）：
     添加：
